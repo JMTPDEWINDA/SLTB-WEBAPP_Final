@@ -1,0 +1,44 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo3{
+    width: 150px;
+    filter: brightness(0) saturate(100%);
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #49557e;
+}
+.navbar button{
+    background: blue;
+    font-size: 16px;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;      
+}
+.navbar button:hover{
+    background: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid blue;
+}
+.navbar li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+  
