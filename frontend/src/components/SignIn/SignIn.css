@@ -1,0 +1,106 @@
+.signin-container {
+    width: 360px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 150px;
+    filter: brightness(0) saturate(100%);
+  }
+  
+  .signin-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    outline: none;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .forgot-password a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .signin-button {
+    background-color: #4b4bc7;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .bottom-text {
+    font-size: 12px;
+  }
+  
+  .bottom-text a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  
