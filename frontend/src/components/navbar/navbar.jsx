@@ -30,7 +30,7 @@ const Navbar = () => {
                     Home
                 </li>
                 <li 
-                    onClick={() => handleNavigation("/application-status", "Application Status")} 
+                    onClick={() => handleNavigation("/TrackStatus", "Application Status")} 
                     className={menu === "Application Status" ? "active" : ""}
                 >
                     Application Status
