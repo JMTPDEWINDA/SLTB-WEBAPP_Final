@@ -10,6 +10,7 @@ import SelectForm from './components/SelectForm/SelectForm'
 import PlantingForm1 from './components/PlantingForm1/PlantingForm1'
 import ReplantingForm from './components/ReplantingForm/ReplantingForm'
 import ReferenceEntry from './components/ReferenceEntry/ReferenceEntry'
+import TrackStatus from './components/TrackStatus/TrackStatus'
 
 
 
@@ -26,7 +27,8 @@ const App = () => {
         <Route path="/SelectForm" element={<SelectForm />} />
         <Route path="/PlantingForm1" element={<PlantingForm1 />} />
         <Route path="/ReplantingForm" element={<ReplantingForm />} />
-        <Route path="/ReferenceEntry" element={<ReferenceEntry />} />        
+        <Route path="/ReferenceEntry" element={<ReferenceEntry />} />  
+        <Route path="/TrackStatus" element={<TrackStatus />}  />   
         
       </Routes>
 
