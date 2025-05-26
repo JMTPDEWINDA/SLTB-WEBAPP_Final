@@ -16,13 +16,15 @@ const Navbar = () => {
     return (
         <div className="navbar">
             {/* Make logo clickable to home */}
-            <Link to="/" onClick={() => setMenu("Home")}>
+            <Link to="/Home" onClick={() => setMenu("Home")}>
                 <img src={logo3} alt="logo Icon" className="logo3" />
             </Link>
 
             <ul className="navbar-menu">
                 <li 
-                    onClick={() => handleNavigation("/", "Home")} 
+                
+                    
+                    onClick={() => handleNavigation("/Home", "Home")} 
                     className={menu === "Home" ? "active" : ""}
                 >
                     Home
