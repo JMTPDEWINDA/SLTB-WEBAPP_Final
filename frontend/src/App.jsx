@@ -11,6 +11,7 @@ import PlantingForm1 from './components/PlantingForm1/PlantingForm1'
 import ReplantingForm from './components/ReplantingForm/ReplantingForm'
 import ReferenceEntry from './components/ReferenceEntry/ReferenceEntry'
 import TrackStatus from './components/TrackStatus/TrackStatus'
+import About from './components/About/About'
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/ReplantingForm" element={<ReplantingForm />} />
         <Route path="/ReferenceEntry" element={<ReferenceEntry />} />  
         <Route path="/TrackStatus" element={<TrackStatus />}  />   
+        <Route path="/About" element={<About/>} />
         
       </Routes>
 

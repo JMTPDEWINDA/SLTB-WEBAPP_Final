@@ -30,6 +30,8 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>Copyright © Sri Lanka Tea Board | All Rights Reserved</p>
+        <p>Developed By J M T P Devinda (BSc. (Hons) In Computer Science,NSBM Green University,Sri Lanka)</p> 
+        <p>Collaborated With W P S Sandaruwan (BSc. (Hons) In Computer Science,NSBM Green University, Sri Lanka)</p>
       </div>
     </footer>
   );
