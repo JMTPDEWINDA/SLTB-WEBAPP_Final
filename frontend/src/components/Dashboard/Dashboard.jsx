@@ -13,6 +13,7 @@ const Dashboard = () => {
         <h2>DashBoard</h2>
         <button className="dashboard-btn" onClick={() => navigate('/Home')}> Home</button>
         <button className="dashboard-btn" onClick={() => navigate('/SelectForm')}>New Application </button>
+        <button className="dashboard-btn" onClick={() => navigate('/NewReferenceEntity')}>Add New Application </button>
         <button className="dashboard-btn"onClick={() => navigate('/ReferenceEntry')}>Permission Application</button>
         <button className="dashboard-btn" onClick={() => navigate('/TrackStatus')}>Track Status</button>
         <button className="dashboard-btn">Settings</button>
