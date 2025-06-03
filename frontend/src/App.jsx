@@ -12,6 +12,7 @@ import ReplantingForm from './components/ReplantingForm/ReplantingForm'
 import ReferenceEntry from './components/ReferenceEntry/ReferenceEntry'
 import TrackStatus from './components/TrackStatus/TrackStatus'
 import About from './components/About/About'
+import NewReferenceEntry from './components/NewReferenceEntry/NewReferenceEntry'
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/ReferenceEntry" element={<ReferenceEntry />} />  
         <Route path="/TrackStatus" element={<TrackStatus />}  />   
         <Route path="/About" element={<About/>} />
+        <Route path="/NewReferenceEntity" element={<NewReferenceEntry />} />
         
       </Routes>
 
