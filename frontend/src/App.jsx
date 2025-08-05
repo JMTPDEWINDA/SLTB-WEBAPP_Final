@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './components/navbar/navbar'
 import { Route, Routes } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
+import ProtectedRoute from './components/ProtectedRoute'
 import Home from './components/Home/Home'
-import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 import ForgetPassword from './components/ForgetPassword/ForgetPassword'
 import Dashboard from './components/Dashboard/Dashboard'
@@ -18,26 +19,42 @@ import NewReferenceEntry from './components/NewReferenceEntry/NewReferenceEntry'
 
 const App = () => {
   return (
-    <div className='app'>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/SelectForm" element={<SelectForm />} />
-        <Route path="/PlantingForm1" element={<PlantingForm1 />} />
-        <Route path="/ReplantingForm" element={<ReplantingForm />} />
-        <Route path="/ReferenceEntry" element={<ReferenceEntry />} />  
-        <Route path="/TrackStatus" element={<TrackStatus />}  />   
-        <Route path="/About" element={<About/>} />
-        <Route path="/NewReferenceEntity" element={<NewReferenceEntry />} />
-        
-      </Routes>
-
-    </div>
+    <AuthProvider>
+      <div className='app'>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
+          <Route path="/Dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/SelectForm" element={
+            <ProtectedRoute>
+              <SelectForm />
+            </ProtectedRoute>
+          } />
+          <Route path="/PlantingForm1" element={
+            <ProtectedRoute>
+              <PlantingForm1 />
+            </ProtectedRoute>
+          } />
+          <Route path="/ReplantingForm" element={
+            <ProtectedRoute>
+              <ReplantingForm />
+            </ProtectedRoute>
+          } />
+          <Route path="/ReferenceEntry" element={<ReferenceEntry />} />  
+          <Route path="/TrackStatus" element={<TrackStatus />}  />   
+          <Route path="/About" element={<About/>} />
+          <Route path="/NewReferenceEntity" element={<NewReferenceEntry />} />
+        </Routes>
+      </div>
+    </AuthProvider>
   )
 }
 
