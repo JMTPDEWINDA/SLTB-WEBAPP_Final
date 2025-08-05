@@ -10,7 +10,7 @@ const Header = () => {
         <h2>Tea Board Assistance Management System</h2>
         <p>The Tea Board Assistance Management System is a web-based application designed to streamline the process of applying for and managing financial assistance for tea replanting and direct planting. This system allows farmers to submit applications online, track their application status, and receive approvals or rejections from Tea Board officers and administrators.</p>   
         <button>
-        <Link to="/SignUp" style={{ textDecoration: 'none', color: 'black' }}>Sign Up</Link>
+        <Link to="/signin" style={{ textDecoration: 'none', color: 'black' }}>Sign In</Link>
         </button>  
         </div>
     </div>
